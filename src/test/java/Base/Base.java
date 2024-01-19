@@ -14,12 +14,17 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.HomePage;
+import pages.RegistrationPage;
 
 public class Base {
 	WebDriver driver;
 	Properties prop;
+	public HomePage home;
 	
 	
 	
@@ -70,7 +75,19 @@ public class Base {
 		driver.get(prop.getProperty("url"));
 		return driver;
 	}
+	@BeforeMethod
+	public HomePage setUp() {
+		
+	    driver=launchingBrowser("Chrome");
+		 home=new HomePage(driver);
+		 return home;
+		
+	}
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
 	
 	
-	
+	}
 }
