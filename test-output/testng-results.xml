@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-19T17:04:01 IST" name="Default suite" finished-at="2024-01-19T17:04:25 IST" duration-ms="23632">
+    <groups>
+    </groups>
+    <test started-at="2024-01-19T17:04:01 IST" name="Default test" finished-at="2024-01-19T17:04:25 IST" duration-ms="23632">
+      <class name="testCases.RegistrationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.RegistrationTest@3270d194]" started-at="2024-01-19T17:04:02 IST" name="setUp" finished-at="2024-01-19T17:04:08 IST" duration-ms="6239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="RegistrationWithValidCredential(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.RegistrationTest@3270d194]" started-at="2024-01-19T17:04:08 IST" name="RegistrationWithValidCredential" data-provider="excelDataRead" finished-at="2024-01-19T17:04:09 IST" duration-ms="1029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[john.doe@example.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Password123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegistrationWithValidCredential -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.RegistrationTest@3270d194]" started-at="2024-01-19T17:04:09 IST" name="tearDown" finished-at="2024-01-19T17:04:09 IST" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.RegistrationTest@3270d194]" started-at="2024-01-19T17:04:09 IST" name="setUp" finished-at="2024-01-19T17:04:13 IST" duration-ms="3543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="RegistrationWithValidCredential(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.RegistrationTest@3270d194]" started-at="2024-01-19T17:04:13 IST" name="RegistrationWithValidCredential" data-provider="excelDataRead" finished-at="2024-01-19T17:04:14 IST" duration-ms="1147" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[alice.smith@example.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[SecurePass321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[SecurePass321]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegistrationWithValidCredential -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.RegistrationTest@3270d194]" started-at="2024-01-19T17:04:14 IST" name="tearDown" finished-at="2024-01-19T17:04:14 IST" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.RegistrationTest@3270d194]" started-at="2024-01-19T17:04:14 IST" name="setUp" finished-at="2024-01-19T17:04:18 IST" duration-ms="3755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="RegistrationWithValidCredential(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.RegistrationTest@3270d194]" started-at="2024-01-19T17:04:18 IST" name="RegistrationWithValidCredential" data-provider="excelDataRead" finished-at="2024-01-19T17:04:19 IST" duration-ms="1214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bob]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Johnson]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bob.johnson@example.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1122334455]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[StrongPass456]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[StrongPass456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegistrationWithValidCredential -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.RegistrationTest@3270d194]" started-at="2024-01-19T17:04:19 IST" name="tearDown" finished-at="2024-01-19T17:04:20 IST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.RegistrationTest@3270d194]" started-at="2024-01-19T17:04:20 IST" name="setUp" finished-at="2024-01-19T17:04:23 IST" duration-ms="3793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="RegistrationWithValidCredential(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.RegistrationTest@3270d194]" started-at="2024-01-19T17:04:23 IST" name="RegistrationWithValidCredential" data-provider="excelDataRead" finished-at="2024-01-19T17:04:25 IST" duration-ms="1120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Emily]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Davis]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[emily.davis@example.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Secret123]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Secret123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegistrationWithValidCredential -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.RegistrationTest@3270d194]" started-at="2024-01-19T17:04:25 IST" name="tearDown" finished-at="2024-01-19T17:04:25 IST" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.RegistrationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
