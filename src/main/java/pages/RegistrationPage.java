@@ -41,38 +41,35 @@ public class RegistrationPage {
 
 	@FindBy(xpath = "//div[text()='Warning: E-Mail Address is already registered!']")
 	WebElement warningMessage;
-	
-	
-	
-	
+
+	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
+	WebElement privacyPolicyWarning;
+
+	@FindBy(xpath = "//label[@for='input-firstname']")
+	WebElement firstNameRedMark;
+
+	@FindBy(xpath = "//label[@for='input-lastname']")
+	WebElement lastNameRedMark;
+
+	@FindBy(xpath = "//label[@for='input-email']")
+	WebElement emailRedMark;
+
+	@FindBy(xpath = "//label[@for='input-telephone']")
+	WebElement telephoneRedMark;
+
+	@FindBy(xpath = "//label[@for='input-password']")
+	WebElement inputPassRedMark;
+
+	@FindBy(xpath = "//label[@for='input-confirm']")
+	WebElement inputPassConfirmRedMark;
+
 	public RegistrationPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	
-	public String warningMessage() {
-		return warningMessage.getText();
-	}
-	
-	
-	
-	public void RegistrationFields() {
 
-		firstName.sendKeys("Dheerendra");
-		lastName.sendKeys("Vishwakarma");
-		emailField.sendKeys("dheendra1608@gmail.com");
-		telePhoneField.sendKeys("9838159161");
-		passWord.sendKeys("123456");
-		confirmPassWord.sendKeys("123456");
-		YesNewLetterSubscribe.click();
-		agreePrivacyPolicy.click();
-		continueButton.click();
-		
-	}
-
-	public void UserRegistrationField(String FirstName, String LastName, String EmailID, String TelephoneNo,
-			String PassWord, String ConfirmPassWord) {
+	public AccountSuccessfulPage RegistrationWithYesField(String FirstName, String LastName, String EmailID,
+			String TelephoneNo, String PassWord, String ConfirmPassWord) {
 
 		firstName.sendKeys(FirstName);
 		lastName.sendKeys(LastName);
@@ -83,6 +80,59 @@ public class RegistrationPage {
 		YesNewLetterSubscribe.click();
 		agreePrivacyPolicy.click();
 		continueButton.click();
+		return new AccountSuccessfulPage(driver);
+	}
+
+	public AccountSuccessfulPage RegistrationWithoutYesField(String FirstName, String LastName, String EmailID,
+			String TelephoneNo, String PassWord, String ConfirmPassWord) {
+
+		firstName.sendKeys(FirstName);
+		lastName.sendKeys(LastName);
+		emailField.sendKeys(EmailID);
+		telePhoneField.sendKeys(TelephoneNo);
+		passWord.sendKeys(PassWord);
+		confirmPassWord.sendKeys(ConfirmPassWord);
+		agreePrivacyPolicy.click();
+		continueButton.click();
+		return new AccountSuccessfulPage(driver);
+	}
+
+	public void RegistrationClickButton() {
+		continueButton.click();
+
+	}
+	
+	public void validateThankYouForRegistration() {
+		
+	}
+	
+	
+
+	public void RegistrationClickButtonWIthCheckBox() {
+		agreePrivacyPolicy.click();
+		continueButton.click();
+
+	}
+
+	public String warningMessageAgreePolicy() {
+		return privacyPolicyWarning.getText();
+	}
+
+	public String warningMessage() {
+		return warningMessage.getText();
+	}
+
+	public boolean validateFieldsMarkedWithRedColorSymbol() {
+		boolean isFirstNameDisplayed = firstNameRedMark.isDisplayed();
+		boolean isLastNameDisplayed = lastNameRedMark.isDisplayed();
+		boolean isEmailDisplayed = emailRedMark.isDisplayed();
+		boolean isTelephoneDisplayed = telephoneRedMark.isDisplayed();
+		boolean isInputPassDisplayed = inputPassRedMark.isDisplayed();
+		boolean isInputPassConfirmDisplayed = inputPassConfirmRedMark.isDisplayed();
+
+		// Return true if all elements are displayed, otherwise return false
+		return isFirstNameDisplayed && isLastNameDisplayed && isEmailDisplayed && isTelephoneDisplayed
+				&& isInputPassDisplayed && isInputPassConfirmDisplayed;
 	}
 
 }

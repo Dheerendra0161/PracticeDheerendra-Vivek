@@ -5,8 +5,8 @@
     <classes>
       <class name="testCases.RegistrationTest">
         <methods>
-          <include name="RegistrationWithValidCredential"/>
           <include name="setUp"/>
+          <include name="Registration_NewUsers"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- testCases.RegistrationTest -->
